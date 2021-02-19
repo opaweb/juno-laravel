@@ -12,7 +12,16 @@
             "email": "opa@opaweb.net"
         }
     ],
-    "require": {
+    "repositories":
+    [
+            {
+                "type": "vcs",
+                "url": "https://github.com/opaweb/juno-laravel"
+            }
+    ],
+    "require":
+    {
+        "opaweb/juno-laravel": "dev-master",
         "php": "^7.4",
         "guzzlehttp/guzzle": "^6.5.5",
         "ext-json": "*"
@@ -41,11 +50,5 @@
                 "Juno": "Jetimob\\Juno\\Facades\\Juno"
             }
         }
-    },
-    "repositories": [
-        {
-            "type": "vcs",
-            "url": "https://github.com/opaweb/juno-laravel"
-        }
-],
+    }
 }
