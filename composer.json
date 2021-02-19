@@ -5,6 +5,7 @@
     "description": "Integração Juno para Laravel",
     "type": "library",
     "license": "MIT",
+    "minimum-stability":"dev",
     "authors": [
         {
             "name": "Opaweb",
