@@ -17,6 +17,7 @@
         "guzzlehttp/guzzle": "^6.5.5",
         "ext-json": "*"
     },
+
     "require-dev": {
         "orchestra/testbench": "^6.2",
         "phpunit/phpunit": "^9.4"
@@ -40,5 +41,11 @@
                 "Juno": "Jetimob\\Juno\\Facades\\Juno"
             }
         }
-    }
+    },
+    "repositories": [
+        {
+            "type": "vcs",
+            "url": "https://github.com/opaweb/juno-laravel"
+        }
+],
 }
