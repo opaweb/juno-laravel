@@ -1,5 +1,6 @@
 {
     "name": "opaweb/juno-laravel",
+    "version":"0.1.1-dev",
     "homepage": "https://github.com/opaweb/juno-laravel",
     "description": "Integração Juno para Laravel",
     "type": "library",
