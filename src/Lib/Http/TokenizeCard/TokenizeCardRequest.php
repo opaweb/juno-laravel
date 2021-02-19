@@ -1,6 +1,6 @@
 <?php
 
-namespace Jetimob\Juno\Lib\Http\TokenizeCard;
+namespace \Jetimob\Juno\Lib\Http\TokenizeCard;
 
 use Jetimob\Juno\Lib\Http\Request;
 use Jetimob\Juno\Lib\Http\Method;
