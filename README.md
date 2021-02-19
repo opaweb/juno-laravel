@@ -1,9 +1,11 @@
 # juno-laravel
 
 Forked from jetimob/juno-sdk-php-laravel.
-DONE:
+
+> **DONE:**
 - Credit card tokenization (must use JS tokenization from Juno).
-TODO:
+
+> **TODO:**
 - UI for credit card;
 - Local JS interface for Juno JS tokenization.
 
