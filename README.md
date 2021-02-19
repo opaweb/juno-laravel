@@ -1,4 +1,11 @@
-# juno-sdk-php-laravel
+# juno-laravel
+
+Forked from jetimob/juno-sdk-php-laravel.
+DONE:
+- Credit card tokenization (must use JS tokenization from Juno).
+TODO:
+- UI for credit card;
+- Local JS interface for Juno JS tokenization.
 
 Make sure to add **`JUNO_PRIVATE_TOKEN`**, **`JUNO_CLIENT_ID`** and **`JUNO_CLIENT_SECRET`** to your `.env` file to identify your account in every request.
 
@@ -9,7 +16,7 @@ Make sure to add **`JUNO_PRIVATE_TOKEN`**, **`JUNO_CLIENT_ID`** and **`JUNO_CLIE
 Using Composer:
 
 ```sh
-$ composer require jetimob/juno-sdk-php-laravel
+$ composer require opaweb/juno-laravel
 ```
 
 ### Publishing configurations

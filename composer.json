@@ -1,13 +1,13 @@
 {
-    "name": "jetimob/juno-sdk-php-laravel",
-    "homepage": "https://github.com/jetimob/juno-sdk-php-laravel",
-    "description": "Juno integration developed to Jetimob's internal use.",
+    "name": "opaweb/juno-laravel",
+    "homepage": "https://github.com/opaweb/juno-laravel",
+    "description": "Integração Juno para Laravel",
     "type": "library",
     "license": "MIT",
     "authors": [
         {
-            "name": "Alan Weingartner",
-            "email": "hi@alanwgt.com"
+            "name": "Opaweb",
+            "email": "opa@opaweb.net"
         }
     ],
     "require": {

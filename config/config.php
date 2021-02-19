@@ -33,7 +33,7 @@ return [
     'version' => 2,
 
     // Can be 'sandbox' or 'production'.
-    'environment' => 'sandbox',
+    'environment' => env('JUNO_ENV', 'sandbox'),
 
     // Defines if the logging should be enabled or not. If set to true, every the log entry will be sent to Laravel's
     // default logging output.
