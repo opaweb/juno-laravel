@@ -12,13 +12,6 @@
             "email": "opa@opaweb.net"
         }
     ],
-    "repositories":
-    [
-            {
-                "type": "vcs",
-                "url": "https://github.com/opaweb/juno-laravel"
-            }
-    ],
     "require":
     {
         "opaweb/juno-laravel": "dev-master",
@@ -26,11 +19,17 @@
         "guzzlehttp/guzzle": "^6.5.5",
         "ext-json": "*"
     },
-
     "require-dev": {
         "orchestra/testbench": "^6.2",
         "phpunit/phpunit": "^9.4"
     },
+    "repositories":
+    [
+            {
+                "type": "vcs",
+                "url": "https://github.com/opaweb/juno-laravel"
+            }
+    ],
     "autoload": {
         "psr-4": {
             "Jetimob\\Juno\\": "src"
