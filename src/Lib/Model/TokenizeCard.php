@@ -8,6 +8,6 @@ class TokenizeCard
 {
     use Serializable;
 
-    public string $cardHash;
+    public string $creditCardHash;
 
 }

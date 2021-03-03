@@ -4,30 +4,33 @@ namespace \Jetimob\Juno\Lib\Http\TokenizeCard;
 
 use Jetimob\Juno\Lib\Http\Request;
 use Jetimob\Juno\Lib\Http\Method;
-use Jetimob\Juno\Lib\Model\TokenizeCard;
+use Jetimob\Juno\Lib\Http\BodyType;
 
 
 /**
  * Class TokenizeCardRequest
- * @package Jetimob\Juno\Lib\Http\Charge
+ * @package Jetimob\Juno\Lib\Http\TokenizeCard
  * @see https://dev.juno.com.br/api/v2#operation/tokenizeCreditCard
  */
-class ChargeCreationRequest extends Request
+class TokenizeCardRequest extends Request
 {
     protected TokenizeCard $tokenizeCard;
 
+    protected string $bodyType = BodyType::JSON;
 
-    protected array $bodySchema = ['tokenizeCard'];
+    protected array $bodySchema = ['creditCardHash'];
 
-    /**
-     * TokenizeCardRequest constructor.
-     * @param TokenizeCard $tokenizeCard
-     */
-    public function __construct(TokenizeCard $tokenizeCard)
+    protected string $responseClass = TokenizeCardResponse::class;
+
+    //public string $cardHash;
+
+    
+    public function __construct(/*TokenizeCard $tokenizeCard*/)
     {
         parent::__construct();
-        $this->tokenizeCard = $tokenizeCard;
+        //$this->tokenizeCard = $tokenizeCard;
     }
+    
 
     protected function method(): string
     {
