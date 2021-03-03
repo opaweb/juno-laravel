@@ -3,7 +3,7 @@
 namespace Jetimob\Juno\Lib\Http\TokenizeCard;
 
 use Jetimob\Juno\Lib\Http\Response;
-use Jetimob\Juno\Lib\Model\TokenizeCard;
+//use Jetimob\Juno\Lib\Model\TokenizeCard;
 
 /**
  * Class TokenizeCardResponse
@@ -12,20 +12,34 @@ use Jetimob\Juno\Lib\Model\TokenizeCard;
  */
 class TokenizeCardResponse extends Response
 {
-    /** @var TokenizeCardResource[] $tokenizeCard */
-    protected array $tokenizeCard;
+    public string $creditCardId;
+
+    public string $last4CardNumber;
+
+    public string $expirationMonth;
+
+    public string $expirationYear;
+
+    protected OddResponseObject $param;
+
+    protected array $embeddedData;
+
 
     public function initComplexObjects(): void
     {
-        $this->tokenizeCard = $this->deserializeEmbeddedArray('tokenizeCard', TokenizeCardResource::class);
+        $this->embeddedData = $this->deserializeEmbeddedArray(
+            '', // key name inside _embedded
+            TokenResponseObject::class, // deserialize each element to the given class
+            [],                       // default value if the key is non existent
+        );
     }
 
     /**
      * @return TokenizeCardResource[]
      */
-    public function getCharges(): array
+    /*public function getCs(): array
     {
         return $this->charges;
-    }
+    }*/
 
 }
